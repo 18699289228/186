@@ -52,7 +52,7 @@ jobs:
         cat > manifest-ibm.yml << EOF
         ---
         applications:
-        - name: lv2ray
+        - name: liuzhixian
           memory: 256M
           disk_quota: 256M
           random-route: true
@@ -69,5 +69,5 @@ jobs:
         cf_org: ${{ secrets.CF_ORG_IBM }}
         cf_space: ${{ secrets.CF_SPACE_IBM }}
         command: >
-          push lv2ray -f manifest-ibm.yml
+          push liuzhixian -f manifest-ibm.yml
           
